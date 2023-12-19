@@ -14,8 +14,8 @@
 //   }
 // }
 // for (let i = 0; i < 10; i++) {
-//     const randomRow = Math.floor(Math.random() * 10);
-//     const randomCol = Math.floor(Math.random() * 10);
+//     let randomRow = Math.floor(Math.random() * 10);
+//     let randomCol = Math.floor(Math.random() * 10);
 //     computerPicks.push({row: randomRow, col: randomCol});
 // }
 // function checkCell(row, col) {
@@ -35,11 +35,11 @@
 // }
 
 // №4.2 угадай ячейку
-// const gameTable = document.getElementById('game');
-// const cells = []; //клетки
-// const computerPicks = []; //выбор компьютера
+// let gameTable = document.getElementById('game');
+// let cells = []; //клетки
+// let computerPicks = []; //выбор компьютера
 // let timer = 10; 
-// const timerText = document.createElement('div');
+// let timerText = document.createElement('div');
 // timerText.textContent = timer;
 // document.body.insertBefore(timerText, gameTable);
 // for (let i = 0; i < 10; i++) {
@@ -54,8 +54,8 @@
 //   }
 // }
 // for (let i = 0; i < 10; i++) {
-//     const randomRow = Math.floor(Math.random() * 10);
-//     const randomCol = Math.floor(Math.random() * 10);
+//     let randomRow = Math.floor(Math.random() * 10);
+//     let randomCol = Math.floor(Math.random() * 10);
 //     computerPicks.push({row: randomRow, col: randomCol});
 // }
 // function checkCell(row, col) {
@@ -90,7 +90,7 @@
 // updateTimer(); 
 
 // №5 Экранная клавиатура на JavaScript
-// const keyboardLayout = [
+// let keyboardLayout = [
 //     ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'],
 //     ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'],
 //     ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', ';'],
@@ -112,7 +112,6 @@
 //       keyboardContainer.appendChild(rowElement);
 //     });
 //   }
-
 //   function handleKeyPress(key) {
 //     switch (key) {
 //         case 'CapsLock':
@@ -128,16 +127,13 @@
 //         inputField.value += isCapsLockEnabled() ? key.toUpperCase() : key.toLowerCase();
 //     }
 //   }
-
 //   function toggleCapsLock() {
 //     capsLockEnabled = !capsLockEnabled;
 //     updateCapsLockStyle();
 //   }
-
 //   function isCapsLockEnabled() {
 //     return capsLockEnabled;
 //   }
-
 //   let capsLockEnabled = false;
 //   createKeyboard();
 
@@ -207,7 +203,7 @@
 // });
 
 // №8 Поиск исторических события на JavaScript
-// const historicalEvents = [
+// let historicalEvents = [
 //     { date: '2004-14-03', title: 'выборы Президента России.', description: 'Президентом РФ на второй срок избран Владимир Путин. ' },
 //     { date: '2005-13-09', title: 'Нападение на Нальчик', description: 'вооружённое выступление боевиков 13—14 октября 2005 года в городе Нальчике под общим командованием Шамиля Басаева, выразилось главным образом в нападении на силовые структуры (отделения милиции, ФСБ, воинскую часть и др.), по замыслу боевиков должно было послужить взятию города под свой контроль с последующим его удержанием на протяжении некоторого времени.' },
 //     { date: '2003-15-10', title: 'два террористических акта, произошедших 15 и 20 ноября 2003 года в центре Стамбула.', description: '15 ноября 2003 года с помощью заминированных автомобилей, которые вели смертники, были осуществлены взрывы возле двух синагог в Стамбуле. 25 человек были убиты и более 300 ранены. Исламисты объяснили свои действия тем, что в синагогах «работали израильские агенты».' },
@@ -235,10 +231,10 @@
 //       return;
 //     }
 //     events.forEach(event => {
-//       const row = table.insertRow();
-//       const dateCell = row.insertCell(0);
-//       const titleCell = row.insertCell(1);
-//       const descriptionCell = row.insertCell(2);
+//       let row = table.insertRow();
+//       let dateCell = row.insertCell(0);
+//       let titleCell = row.insertCell(1);
+//       let descriptionCell = row.insertCell(2);
 //       dateCell.textContent = event.date;
 //       titleCell.textContent = event.title;
 //       descriptionCell.textContent = event.description;
